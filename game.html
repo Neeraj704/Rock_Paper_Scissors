@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GAME</title>
+	<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+	<p class="heading">Rock Paper Scissors</p>
+
+	<button class="selectButton" onclick="playGame('rock');"> 
+		<img src="icons/rock-icon.png" class="rockIcon"> 
+	</button>
+
+	<button class="selectButton" onclick="playGame('paper');"> 
+		<img src="icons/paper-icon.png" class="paperIcon">
+	</button>
+
+	<button class="selectButton" onclick="playGame('scissors');"> 
+		<img src="icons/scissors-icon.png" class="scissorsIcon"> 
+	</button>
+
+	<p class="js-result"></p>
+	<p class="js-choice"></p>
+	<p class="js-score"></p>
+	
+	<table class="wnt-table">
+		<tr>
+			<th>WINS</th>
+			<th>LOSSES</th>
+			<th>TIES</th>
+		</tr>
+		<tr>
+			<td class="winst">0</td>
+			<td class="lossest">0</td>
+			<td class="tiest">0</td>
+		</tr>
+	</table>
+
+	<button class="resetButton" onclick="
+	score.wins = 0; 
+	score.losses = 0; 
+	score.ties = 0; 
+	localStorage.removeItem('score');
+	document.querySelector('.js-result').innerHTML = '';
+	document.querySelector('.js-choice').innerHTML = '';
+	scoreUpdater ();"> 
+		Reset Score 
+	</button>
+
+	<button class="autoPlayButton" onclick="
+		autoPlay();
+		autoPlayText();
+	">Start Auto Play</button>
+
+	<script src="game.js"></script>
+</body>
+</html>
