@@ -5,6 +5,8 @@ A basic Rock-Paper-Scissors game built with HTML, CSS, and JavaScript.
 
 # Features
 
-Play Rock-Paper-Scissors: Choose Rock, Paper, or Scissors and play against the computer.
-Autoplay Mode: Let the game play automatically in a loop.
-Reset Button : Resets the score of the entire session.
+• Play Rock-Paper-Scissors: Choose Rock, Paper, or Scissors and play against the computer.
+
+• Autoplay Mode: Let the game play automatically in a loop.
+ 
+• Reset Button : Resets the score of the entire session.
